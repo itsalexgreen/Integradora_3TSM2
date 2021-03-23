@@ -24,4 +24,5 @@ create table TARJETA(
 	no_tarjeta int primary key,
 	cvv int,
 	saldo bigint,
+	id_usuario int,
 	foreign key(id_usuario) references USUARIO(id_usuario) on delete cascade on update cascade);
