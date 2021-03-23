@@ -1,5 +1,5 @@
-create database cosoalexis;
-\c cosoalexis;
+create database integradora;
+\c integradora;
 
 create table USUARIO(
 	id_usuario serial,
@@ -7,9 +7,9 @@ create table USUARIO(
 	pass varchar(50),
 	nom_us varchar(50),
 	app_us varchar(50),
-	apm_us varchar(50),
+	apm_us varchar(50));
 
-	//espacio para el cliente
+create tablet CLIENTE(
 	num_ext varchar(50), 
 	num_int varchar(50),
 	estado varchar(50),
@@ -17,7 +17,6 @@ create table USUARIO(
 	colonia varchar(50),
 	calle varchar(50),
 	cp int
-
 	);
 
 create table TARJETA(
