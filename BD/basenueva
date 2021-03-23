@@ -10,14 +10,15 @@ create table USUARIO(
 	apm_us varchar(50));
 
 create tablet CLIENTE(
+	id_cliente int primary key,
 	num_ext varchar(50), 
 	num_int varchar(50),
 	estado varchar(50),
 	municipio varchar(50),
 	colonia varchar(50),
 	calle varchar(50),
-	cp int
-	);
+	cp int, 
+	foreign key(id_cliente)references USUARIO(id_cliente) on delete cascade on update cascade);
 
 create table TARJETA(
 	no_tarjeta int primary key,
